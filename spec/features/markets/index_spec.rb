@@ -12,4 +12,14 @@ RSpec.describe "markets index page" do
       expect(page).to have_content("Washington")
     end
   end
+
+  it "has a button that leads to a market's show page" do
+    visit "/markets"
+
+    within(".markets") do 
+      more_info_buttons = all(".more-info-button")
+      more_info_buttons[0].click
+      expect(current_path).to eq("/markets/322458") 
+    end
+  end
 end

@@ -7,7 +7,7 @@
           <%= market.name %><br>
           <%= market.city %><br>
           <%= market.state %><br>
-          <%= link_to "View More Info", market_path(market) %>
+          <%= link_to "More Info", market_path(market.id), class: "more-info-button" %>
         </div>
       </li>
     <% end %>
