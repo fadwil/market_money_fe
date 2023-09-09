@@ -1,0 +1,15 @@
+<h1>Markets</h1>
+<div class="markets">
+  <ul>
+    <% @markets.each do |market| %>
+      <li>
+        <div class="market">
+          <%= market.name %><br>
+          <%= market.city %><br>
+          <%= market.state %><br>
+          <%= link_to "View More Info", market_path(market) %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
