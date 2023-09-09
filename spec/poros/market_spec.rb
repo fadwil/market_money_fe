@@ -1,5 +1,3 @@
-# spec/models/market_spec.rb
-
 require 'rails_helper'
 
 RSpec.describe Market do

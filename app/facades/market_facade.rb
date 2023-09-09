@@ -9,4 +9,10 @@ class MarketFacade
     market_data = MarketService.single_market(id)[:data]
     Market.new(market_data)
   end
+
+  def self.vendors_at_market(id)
+    MarketService.market_vendors(id)[:data].map do |vendor_data|
+      Vendor.new(vendor_data)
+    end
+  end
 end

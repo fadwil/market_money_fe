@@ -15,4 +15,8 @@ class MarketService
   def self.single_market(id)
     get_url("/api/v0/markets/#{id}")
   end
+
+  def self.market_vendors(id)
+    get_url("/api/v0/markets/#{id}/vendors")
+  end
 end
