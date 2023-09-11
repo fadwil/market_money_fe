@@ -39,19 +39,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6ab9ccb6-8d09-4fb7-8d47-85b5e20c3b9a
+      - 1c47c6e4-ec03-4dcc-9458-cbd2e86020ce
       X-Runtime:
-      - '0.005356'
+      - '0.005543'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.71, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=2.75
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.66, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=2.89
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"322474","type":"market","attributes":{"name":"2nd Street
         Farmers'' Market","street":"194 second street","city":"Amherst","county":"Amherst","state":"Virginia","zip":"24521","lat":"37.583311","lon":"-79.048573","vendor_count":35},"relationships":{"vendors":{"data":[{"id":"55297","type":"vendor"},{"id":"56227","type":"vendor"},{"id":"56172","type":"vendor"},{"id":"56489","type":"vendor"},{"id":"55254","type":"vendor"},{"id":"56411","type":"vendor"},{"id":"55020","type":"vendor"},{"id":"55080","type":"vendor"},{"id":"56271","type":"vendor"},{"id":"55224","type":"vendor"},{"id":"55891","type":"vendor"},{"id":"56025","type":"vendor"},{"id":"56329","type":"vendor"},{"id":"55209","type":"vendor"},{"id":"56104","type":"vendor"},{"id":"56208","type":"vendor"},{"id":"56009","type":"vendor"},{"id":"55634","type":"vendor"},{"id":"55310","type":"vendor"},{"id":"56140","type":"vendor"},{"id":"55785","type":"vendor"},{"id":"55167","type":"vendor"},{"id":"55920","type":"vendor"},{"id":"56038","type":"vendor"},{"id":"54924","type":"vendor"},{"id":"55350","type":"vendor"},{"id":"56272","type":"vendor"},{"id":"55543","type":"vendor"},{"id":"55291","type":"vendor"},{"id":"56240","type":"vendor"},{"id":"55313","type":"vendor"},{"id":"55668","type":"vendor"},{"id":"55284","type":"vendor"},{"id":"56206","type":"vendor"},{"id":"55055","type":"vendor"}]}}}}'
-  recorded_at: Sat, 09 Sep 2023 22:47:30 GMT
+  recorded_at: Sun, 10 Sep 2023 14:10:10 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/v0/markets/322474/vendors
@@ -91,12 +91,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '09cd25b3-16c0-4df3-97ad-9dd1c4738650'
+      - 1954434b-6f36-4354-abbf-6d5580779d83
       X-Runtime:
-      - '0.066531'
+      - '0.068978'
       Server-Timing:
-      - start_processing.action_controller;dur=0.03, sql.active_record;dur=49.49,
-        instantiation.active_record;dur=0.09, process_action.action_controller;dur=64.12
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=51.95,
+        instantiation.active_record;dur=0.09, process_action.action_controller;dur=66.40
       Transfer-Encoding:
       - chunked
     body:
@@ -172,5 +172,58 @@ http_interactions:
         Tad Langosh","contact_phone":"848-755-8522","credit_accepted":false,"states_sold_in":["Virginia"]},"relationships":{"markets":{"data":[{"id":"322474","type":"market"},{"id":"323947","type":"market"},{"id":"324118","type":"market"},{"id":"324458","type":"market"},{"id":"324552","type":"market"},{"id":"324826","type":"market"},{"id":"325254","type":"market"},{"id":"326196","type":"market"},{"id":"325538","type":"market"},{"id":"331043","type":"market"}]}}},{"id":"55055","type":"vendor","attributes":{"name":"Herb
         Appeal","description":"Fresh herbs and herbal products.","contact_name":"Mattie
         Doyle","contact_phone":"394.419.5264","credit_accepted":true,"states_sold_in":["Virginia"]},"relationships":{"markets":{"data":[{"id":"322474","type":"market"},{"id":"323826","type":"market"},{"id":"324248","type":"market"},{"id":"324298","type":"market"},{"id":"324458","type":"market"},{"id":"324900","type":"market"},{"id":"326196","type":"market"},{"id":"325538","type":"market"},{"id":"326482","type":"market"},{"id":"329051","type":"market"},{"id":"329546","type":"market"},{"id":"330157","type":"market"},{"id":"330834","type":"market"},{"id":"331043","type":"market"}]}}}]}'
-  recorded_at: Sat, 09 Sep 2023 22:47:30 GMT
+  recorded_at: Sun, 10 Sep 2023 14:10:11 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/56172
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"adc2602c325f37a704f18cece9a6bb7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4d9e56e2-d6a4-4fab-b50c-900c76c78e11
+      X-Runtime:
+      - '0.005761'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.03, sql.active_record;dur=2.20, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=3.17
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"56172","type":"vendor","attributes":{"name":"The Fabric
+        Patch","description":"Upcycled fabric creations and accessories.","contact_name":"Hank
+        Simonis","contact_phone":"363.062.9508","credit_accepted":false,"states_sold_in":["Virginia"]},"relationships":{"markets":{"data":[{"id":"322474","type":"market"},{"id":"323664","type":"market"},{"id":"323728","type":"market"},{"id":"324248","type":"market"},{"id":"324298","type":"market"},{"id":"324826","type":"market"},{"id":"324900","type":"market"},{"id":"325538","type":"market"},{"id":"326482","type":"market"},{"id":"326931","type":"market"},{"id":"330834","type":"market"}]}}}}'
+  recorded_at: Sun, 10 Sep 2023 14:10:11 GMT
 recorded_with: VCR 6.2.0
