@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322500/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"cf2d5a0ab6831a1b95538c36b74f6745"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - acaac4c8-9a06-44eb-b0b5-42a8fa2d8aba
+      X-Runtime:
+      - '0.032961'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=16.00,
+        instantiation.active_record;dur=0.29, process_action.action_controller;dur=22.76
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55273","type":"vendor","attributes":{"name":"Rocky
+        Mountain Oyster Company","description":"Unique snacks made from Colorado bull
+        testicles.","contact_name":"Dr. Christiana Kirlin","contact_phone":"436-727-1154","credit_accepted":true,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325018","type":"market"},{"id":"325232","type":"market"},{"id":"325690","type":"market"},{"id":"326354","type":"market"},{"id":"327242","type":"market"},{"id":"329352","type":"market"}]}}},{"id":"55402","type":"vendor","attributes":{"name":"Jamin
+        Good Time","description":"Homemade jams and jellies","contact_name":"Rick
+        Crist","contact_phone":"(457) 888-8924","credit_accepted":false,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325018","type":"market"},{"id":"325232","type":"market"},{"id":"327242","type":"market"}]}}},{"id":"56062","type":"vendor","attributes":{"name":"Handmade
+        Pottery Co.","description":"Handmade pottery pieces for everyday use.","contact_name":"Mr.
+        Nancee Rodriguez","contact_phone":"(947) 180-4645","credit_accepted":true,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325232","type":"market"},{"id":"326354","type":"market"},{"id":"327242","type":"market"},{"id":"328051","type":"market"},{"id":"329352","type":"market"},{"id":"330597","type":"market"}]}}},{"id":"55640","type":"vendor","attributes":{"name":"Bubbles
+        and Brews","description":"Sparkling kombucha with a range of fruity, floral
+        and spicy flavors.","contact_name":"Fr. Cruz Ziemann","contact_phone":"760-146-0006","credit_accepted":true,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325018","type":"market"},{"id":"325690","type":"market"},{"id":"328051","type":"market"},{"id":"329352","type":"market"}]}}},{"id":"56398","type":"vendor","attributes":{"name":"Oceanic
+        Artifacts","description":"Sells authentic artifacts and curiosities from various
+        Oceanic cultures, including weapons, masks, and tools.","contact_name":"Sharleen
+        Hilll","contact_phone":"739-690-1051","credit_accepted":true,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325018","type":"market"},{"id":"325232","type":"market"},{"id":"325690","type":"market"},{"id":"329352","type":"market"},{"id":"330597","type":"market"}]}}},{"id":"55275","type":"vendor","attributes":{"name":"Crested
+        Butte Cakes","description":"Homemade cakes and desserts from Crested Butte.","contact_name":"Estela
+        Hayes","contact_phone":"1-469-220-1940","credit_accepted":true,"states_sold_in":["Kansas"]},"relationships":{"markets":{"data":[{"id":"322500","type":"market"},{"id":"325955","type":"market"},{"id":"325957","type":"market"},{"id":"325018","type":"market"},{"id":"325232","type":"market"},{"id":"328051","type":"market"},{"id":"329352","type":"market"},{"id":"330597","type":"market"}]}}}]}'
+  recorded_at: Sun, 10 Sep 2023 14:10:07 GMT
+recorded_with: VCR 6.2.0

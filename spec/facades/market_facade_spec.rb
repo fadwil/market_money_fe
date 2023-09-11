@@ -28,4 +28,17 @@ RSpec.describe MarketFacade, :vcr do
       expect(market.zip).to be_a(String)
     end
   end
+
+  describe "#vendors_at_market" do
+    it "returns vendors associated with a market" do
+      vendors = MarketFacade.vendors_at_market(322500)
+      
+      expect(vendors).to be_an(Array)
+      expect(vendors.first.name).to be_a(String)
+      expect(vendors.first.description).to be_a(String)
+      expect(vendors.first.contact_name).to be_a(String)
+      expect(vendors.first.contact_phone).to be_a(String)
+      expect(vendors.first.credit_accepted).to be_in([true, false])
+    end
+  end
 end

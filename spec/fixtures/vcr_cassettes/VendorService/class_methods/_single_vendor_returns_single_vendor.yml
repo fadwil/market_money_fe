@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 13b8c35b-a4fa-4523-bd5f-73c79f2c2c79
+      - b2b5aa7a-712f-44ad-a9dc-ebeb79896117
       X-Runtime:
-      - '0.005646'
+      - '0.005298'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.78, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=2.79
+      - start_processing.action_controller;dur=0.03, sql.active_record;dur=1.58, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=2.76
       Transfer-Encoding:
       - chunked
     body:
@@ -52,5 +52,5 @@ http_interactions:
       string: '{"data":{"id":"56172","type":"vendor","attributes":{"name":"The Fabric
         Patch","description":"Upcycled fabric creations and accessories.","contact_name":"Hank
         Simonis","contact_phone":"363.062.9508","credit_accepted":false,"states_sold_in":["Virginia"]},"relationships":{"markets":{"data":[{"id":"322474","type":"market"},{"id":"323664","type":"market"},{"id":"323728","type":"market"},{"id":"324248","type":"market"},{"id":"324298","type":"market"},{"id":"324826","type":"market"},{"id":"324900","type":"market"},{"id":"325538","type":"market"},{"id":"326482","type":"market"},{"id":"326931","type":"market"},{"id":"330834","type":"market"}]}}}}'
-  recorded_at: Sun, 10 Sep 2023 01:17:27 GMT
+  recorded_at: Sun, 10 Sep 2023 14:10:12 GMT
 recorded_with: VCR 6.2.0
